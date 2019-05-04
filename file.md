@@ -20,10 +20,18 @@ Pierwsze zainicjuj klase FileHelper, stwórz konstruktor aby przywołać ścierz
 FileHelper fileHelper = new FileHelper(main, "stajnia", "owca");
 
 ```
+1. Stwórzmy plik:
+
+```java
+
+fileHelper.createFile();
+
+```
+
 
 Teraz zapiszmy coś w pliku:
 
-1. Najpierw trzeba stworzyć konfiguracje pliku :)
+2. Najpierw trzeba stworzyć konfiguracje pliku :)
 
 ```java
 
@@ -31,7 +39,7 @@ YamlConfiguration yamlConfiguration = YamlConfiguration.loadConfiguration(fileHe
 
 ```
 
-2. Zabierzmy się do zapisania wieku owcy:
+3. Zabierzmy się do zapisania wieku owcy:
 
 ```java
 
@@ -39,7 +47,7 @@ yamlConfiguration.set("wiek", 10);
 
 ```
 
-3. Na koncu zapiszmy konfig:
+4. Na koncu zapiszmy konfig:
 
 ```java
 
@@ -47,7 +55,7 @@ fileHelper.saveFile(yamlConfiguration);
 
 ```
 
-4. Powinnismy miec stworzony plik o nazwie 'owca' w folderze stajnia w katalogu plugins/[NaszPlugin] z zawartością:
+5. Powinnismy miec stworzony plik o nazwie 'owca' w folderze stajnia w katalogu plugins/[NaszPlugin] z zawartością:
 
 ```yaml
 
