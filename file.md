@@ -11,7 +11,7 @@ saveDefaultConfig();
 
 ```
 
-Pierwsze zainicjuj klase FileHelper, stwórz konstruktor aby przywołać ścierzkę do pliku i jego nazwę [Example]:
+Pierwsze zainicjuj klase FileHelper, stwórz konstruktor aby przywołać ścieżkę do pliku i jego nazwę [Example]:
 
 ```java
 
